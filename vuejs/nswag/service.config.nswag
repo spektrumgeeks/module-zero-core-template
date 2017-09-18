@@ -1,0 +1,73 @@
+﻿{
+  "swaggerGenerator": {
+    "fromSwagger": {
+      "url": "http://localhost:5000/swagger/v1/swagger.json",
+      "output": null
+    }
+  },
+  "codeGenerators": {
+    "swaggerToTypeScriptClient": {
+      "className": "{controller}ServiceClient",
+      "moduleName": "",
+      "namespace": "",
+      "typeScriptVersion": 1.8,
+      "template": "Fetch",
+      "promiseType": "Promise",
+      "dateTimeType": "MomentJS",
+      "generateClientClasses": true,
+      "generateClientInterfaces": false,
+      "wrapDtoExceptions": false,
+      "useTransformOptionsMethod": false,
+      "useTransformResultMethod": false,
+      "generateDtoTypes": true,
+      "operationGenerationMode": "MultipleClientsFromPathSegments",
+      "markOptionalProperties": false,
+      "typeStyle": "Class",
+      "generateDefaultValues": true,
+      "excludedTypeNames": [],
+      "output": "../src/shared/service-clients/service-clients.ts"
+    },
+    "swaggerToCSharpClient": {
+      "exceptionClass": "SwaggerException",
+      "generateClientClasses": true,
+      "generateClientInterfaces": false,
+      "generateDtoTypes": true,
+      "useHttpClientCreationMethod": false,
+      "useHttpRequestMessageCreationMethod": false,
+      "generateContractsOutput": false,
+      "className": "{controller}ServiceClient",
+      "namespace": "MyNamespace",
+      "requiredPropertiesMustBeDefined": true,
+      "dateType": "System.DateTime",
+      "dateTimeType": "System.DateTime",
+      "timeType": "System.TimeSpan",
+      "timeSpanType": "System.TimeSpan",
+      "arrayType": "System.Collections.ObjectModel.ObservableCollection",
+      "dictionaryType": "System.Collections.Generic.Dictionary",
+      "classStyle": "Inpc",
+      "operationGenerationMode": "MultipleClientsFromOperationId",
+      "generateDefaultValues": true,
+      "excludedTypeNames": [],
+      "output": null
+    },
+    "swaggerToCSharpController": {
+      "className": "{controller}",
+      "namespace": "MyNamespace",
+      "additionalNamespaceUsages": [
+        "System.Web.Http"
+      ],
+      "requiredPropertiesMustBeDefined": true,
+      "dateType": "System.DateTime",
+      "dateTimeType": "System.DateTime",
+      "timeType": "System.TimeSpan",
+      "timeSpanType": "System.TimeSpan",
+      "arrayType": "System.Collections.Generic.IEnumerable",
+      "dictionaryType": "System.Collections.Generic.Dictionary",
+      "classStyle": "Inpc",
+      "operationGenerationMode": "MultipleClientsFromOperationId",
+      "generateDefaultValues": true,
+      "excludedTypeNames": [],
+      "output": null
+    }
+  }
+}
