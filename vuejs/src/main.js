@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import * as Proxies from './shared/service-clients/service-clients'
 
 Vue.config.productionTip = false
 
