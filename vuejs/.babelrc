@@ -8,9 +8,7 @@
     }],
     "stage-2"
   ],
-  "plugins": [
-      "transform-decorators-legacy", 
-      "transform-runtime"],
+  "plugins": ["transform-runtime"],
   "env": {
     "test": {
       "presets": ["env", "stage-2"],

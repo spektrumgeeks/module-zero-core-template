@@ -1,6 +1,6 @@
-# module-zero-core-template
+# abpcompanyname.abpprojectname
 
-> Vue.js Startup Project For ASP.NET Boilerplate
+> A Vue.js project
 
 ## Build Setup
 
