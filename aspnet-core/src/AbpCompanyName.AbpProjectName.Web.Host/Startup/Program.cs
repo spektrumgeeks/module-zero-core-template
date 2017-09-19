@@ -13,6 +13,7 @@ namespace AbpCompanyName.AbpProjectName.Web.Host.Startup
         public static IWebHost BuildWebHost(string[] args)
         {
             return WebHost.CreateDefaultBuilder(args)
+                .UseUrls("http://localhost:21021")
                 .UseStartup<Startup>()
                 .Build();
         }
