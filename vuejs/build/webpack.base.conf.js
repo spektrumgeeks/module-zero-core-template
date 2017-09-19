@@ -25,6 +25,9 @@ module.exports = {
       '@': resolve('src'),
     }
   },
+  externals: {
+    jquery: "jQuery",
+  },
   module: {
     rules: [
       {
@@ -40,6 +43,10 @@ module.exports = {
       {
         test: /\.ts$/,
         loader: 'ts-loader'
+      },
+      {
+        test: /abp-web-resources/,
+        loader: 'script-loader'
       },
       {
         test: /\.css$/,
